@@ -1,4 +1,3 @@
-from msilib.schema import RadioButton
 from tkinter import *
 k=0
 
@@ -16,6 +15,7 @@ def klikker(event):
         tahvel.itemconfig(img_kast,image=img1)
     else:
         tahvel.itemconfig(img_kast,image=img)
+
 def klikkermaha(event):
     global k
     k-=1
@@ -38,6 +38,7 @@ aken=Tk()
 aken.title("Minu esimene aken")
 aken.iconbitmap("kot.ico") #ICO
 f=Frame(aken,bg="magenta")
+#aken.geometry("400x500")
 
 lbl=Label(f,text="Elemendid",bg="gold",fg="#AA4A44",font="Arial 20",height=5,width=15)
 btn=Button(f,text="Vajuta siia", font="Arial 24", relief=GROOVE, width=11) #GROOVE, SUNKEN, RAISED
